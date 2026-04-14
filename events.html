@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Maison Dorée catering for weddings, corporate breakfasts, private celebrations and more. Fresh-baked bread and pastry platters delivered to your event in Portland.">
+<title>Events & Catering | Maison Dorée Artisan Bakery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+
+/* FINAL CURSOR SYSTEM */
+html, body {
+  cursor: url('cursor-dough.svg') 2 2, auto;
+}
+
+a,
+button,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+label,
+select,
+.card,
+.menu-card,
+.item-card,
+.item-img,
+.process-item,
+.contact-item,
+.footer a,
+.nav-links a,
+.nav-cta,
+.ham,
+.mob a,
+.mob-cta,
+.drop a,
+img {
+  cursor: url('cursor-baked.svg') 2 2, pointer;
+}
+
+
+/* CURSOR SYSTEM */
+body {
+  cursor: url('cursor-dough.svg') 2 2, auto;
+}
+a:hover,
+button:hover,
+.nav-links a:hover,
+.nav-cta:hover,
+.btn:hover,
+.btn-gold:hover,
+.btn-outline-dk:hover,
+.btn-outline-lt:hover,
+.drop a:hover,
+.mob a:hover,
+.mob-cta:hover,
+.ham:hover,
+.card:hover,
+.menu-card:hover,
+.menu-item:hover,
+.item-card:hover,
+.item-img:hover,
+.process-item:hover,
+.contact-item:hover,
+.footer a:hover,
+img:hover {
+  cursor: url('cursor-baked.svg') 2 2, pointer;
+}
+
+:root{--cream:#F9F4EC;--cream-dk:#EFE6D5;--parchment:#E8DBC8;--gold:#B8873A;--gold-lt:#D4A855;--gold-pale:#F0DEB0;--brown:#3A2A1A;--brown-md:#5C3D22;--brown-lt:#8C6544;--espresso:#1A0E05;--rouge:#8B3A3A;--sage:#5A6B4F;--text:#2C1E10;--muted:#7A5C3E;--white:#FFFDF8;--fd:'Playfair Display',Georgia,serif;--fb:'Cormorant Garamond',Georgia,serif;--fs:'Jost',sans-serif;--pad:clamp(1.25rem,5vw,2.5rem);--max:1240px;--ease:cubic-bezier(.16,1,.3,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}body{background:var(--cream);color:var(--text);font-family:var(--fb);line-height:1.7;overflow-x:hidden}
+::selection{background:var(--gold-pale);color:var(--brown)}a{color:inherit;text-decoration:none}img{display:block;width:100%}
+@keyframes fadeIn{to{opacity:1}}@keyframes zoom{to{transform:scale(1)}}@keyframes up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:.9rem var(--pad);background:rgba(249,244,236,.97);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--parchment);display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--fd);font-size:1.45rem;font-style:italic;color:var(--brown)}
+.nav-links{display:flex;gap:0;list-style:none;align-items:center}
+.nav-links>li{position:relative}
+.nav-links a{font-family:var(--fs);font-size:.68rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding:.5rem .9rem;display:block;transition:color .3s;white-space:nowrap}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:.9rem;right:.9rem;height:1px;background:var(--gold-lt);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+.nav-links a:hover::after,.nav-links a.active::after{transform:scaleX(1)}
+.nav-links a:hover,.nav-links a.active{color:var(--brown)}
+.has-drop:hover .drop{opacity:1;visibility:visible;transform:translateY(0)}
+.drop{position:absolute;top:100%;left:0;background:var(--white);border:1px solid var(--parchment);border-radius:2px;box-shadow:0 8px 32px rgba(26,14,5,.12);padding:.5rem 0;min-width:180px;opacity:0;visibility:hidden;transform:translateY(8px);transition:all .3s var(--ease)}
+.drop a{font-size:.64rem;padding:.55rem 1.2rem;color:var(--muted);display:block}.drop a:hover{color:var(--brown);background:var(--cream)}.drop a::after{display:none}
+.drop-arrow{font-size:.55rem;margin-left:.3rem;opacity:.6}
+.nav-cta{font-family:var(--fs);font-size:.68rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;padding:.6rem 1.4rem;border:1px solid var(--gold);color:var(--brown);border-radius:2px;transition:all .3s;margin-left:.5rem}
+.nav-cta:hover{background:var(--gold);color:var(--white)}
+.ham{display:none;flex-direction:column;gap:5px;cursor:inherit;padding:4px;background:none;border:none}
+.ham span{display:block;width:22px;height:1.5px;background:var(--brown);transition:all .3s}
+.ham.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}.ham.open span:nth-child(2){opacity:0}.ham.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.mob{display:none;position:fixed;inset:0;background:var(--brown);z-index:99;flex-direction:column;align-items:center;justify-content:center;gap:2rem;opacity:0;transition:opacity .4s}
+.mob.open{display:flex;opacity:1}
+.mob a{font-family:var(--fd);font-size:clamp(1.6rem,4.5vw,2.5rem);font-style:italic;color:var(--cream);transition:color .3s}.mob a:hover{color:var(--gold-lt)}
+.mob-cta{font-family:var(--fs);font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;padding:.75rem 2rem;border:1px solid var(--gold);color:var(--gold-lt);border-radius:2px;margin-top:.5rem}
+@media(max-width:900px){.nav-links,.nav-cta{display:none}.ham{display:flex}}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}.sp{padding:clamp(72px,10vw,140px) 0}
+.lbl{font-family:var(--fs);font-size:.63rem;font-weight:500;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem;display:flex;align-items:center;gap:.8rem}
+.lbl::before{content:'';width:28px;height:1px;background:var(--gold);flex-shrink:0}.lbl.c{justify-content:center}.lbl.c::before{display:none}.lbl.lt{color:var(--gold-lt)}.lbl.lt::before{background:var(--gold-lt)}
+.h2{font-family:var(--fd);font-size:clamp(1.9rem,4vw,3.4rem);font-weight:400;line-height:1.12;color:var(--brown);margin-bottom:1.2rem}.h2 em{font-style:italic;color:var(--brown-md)}.h2.lt{color:var(--cream)}
+.body{font-family:var(--fb);font-size:1.05rem;font-weight:300;color:var(--muted);line-height:1.85;max-width:52ch}
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .9s var(--ease),transform .9s var(--ease)}.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--fs);font-size:.72rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;padding:.95rem 2.2rem;border-radius:2px;transition:all .3s}
+.btn-gold{background:var(--gold);color:var(--white);border:1px solid var(--gold)}.btn-gold:hover{background:var(--gold-lt);border-color:var(--gold-lt);transform:translateY(-1px);box-shadow:0 8px 24px rgba(184,135,58,.35)}
+.btn-outline-dk{background:transparent;color:var(--brown);border:1px solid var(--parchment)}.btn-outline-dk:hover{border-color:var(--gold);color:var(--gold)}
+.btn-outline-lt{background:transparent;color:var(--cream);border:1px solid rgba(249,244,236,.35)}.btn-outline-lt:hover{border-color:var(--gold-lt);color:var(--gold-lt)}
+/* Page hero */
+.ph{position:relative;min-height:52vh;display:flex;align-items:flex-end;overflow:hidden;padding-top:68px}
+.ph-bg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.04);animation:zoom 10s ease-out forwards}
+.ph-ov{position:absolute;inset:0;background:linear-gradient(165deg,rgba(26,14,5,.78) 0%,rgba(58,42,26,.5) 55%,rgba(26,14,5,.82) 100%)}
+.ph-grain{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");opacity:.5;pointer-events:none}
+.ph-content{position:relative;z-index:2;max-width:var(--max);margin:0 auto;padding:3.5rem var(--pad) 4.5rem;width:100%}
+.ph-eye{font-family:var(--fs);font-size:.65rem;font-weight:500;letter-spacing:.35em;text-transform:uppercase;color:var(--gold-lt);display:flex;align-items:center;gap:1rem;margin-bottom:1.2rem;opacity:0;animation:up .9s var(--ease) .3s forwards}
+.ph-eye::before{content:'';width:40px;height:1px;background:var(--gold)}
+.ph h1{font-family:var(--fd);font-size:clamp(2.8rem,7vw,7rem);font-weight:400;line-height:1.0;color:var(--white);opacity:0;animation:up 1s var(--ease) .5s forwards}
+.ph h1 em{font-style:italic;color:var(--gold-pale)}
+.ph-sub{font-family:var(--fb);font-size:clamp(1rem,1.5vw,1.25rem);font-weight:300;font-style:italic;color:rgba(255,255,255,.7);max-width:46ch;margin-top:1rem;line-height:1.65;opacity:0;animation:up 1s var(--ease) .7s forwards}
+/* Cards */
+.card{background:var(--white);border-radius:2px;overflow:hidden;transition:transform .4s var(--ease),box-shadow .4s}
+.card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(26,14,5,.12)}
+.card-img{height:210px;overflow:hidden;position:relative}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease);display:block}
+.card:hover .card-img img{transform:scale(1.06)}
+.card-tag{position:absolute;top:1rem;right:1rem;font-family:var(--fs);font-size:.57rem;letter-spacing:.14em;text-transform:uppercase;padding:.3rem .7rem;background:var(--gold);color:var(--white);border-radius:2px}
+.card-tag.r{background:var(--rouge)}.card-tag.s{background:var(--sage)}
+.card-body{padding:1.4rem 1.7rem 1.7rem}
+.card-body h3{font-family:var(--fd);font-size:1.18rem;font-weight:600;color:var(--brown);margin-bottom:.4rem}
+.card-body p{font-family:var(--fb);font-size:.92rem;color:var(--muted);line-height:1.6;margin-bottom:.9rem}
+.card-footer{display:flex;align-items:center;justify-content:space-between;padding-top:.85rem;border-top:1px solid var(--cream-dk)}
+.card-price{font-family:var(--fd);font-size:1.12rem;color:var(--gold);font-weight:600}
+.card-note{font-family:var(--fs);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-lt)}
+.cards-2{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+.cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+/* Footer */
+footer{background:var(--brown);padding:4.5rem var(--pad) 2.5rem}
+.fg{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:3.5rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.08)}
+.f-logo{font-family:var(--fd);font-size:1.9rem;font-style:italic;color:var(--gold-lt);margin-bottom:.4rem}
+.f-tag{font-family:var(--fs);font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(232,219,200,.35);margin-bottom:1.2rem}
+.f-desc{font-family:var(--fb);font-size:.93rem;color:rgba(232,219,200,.55);line-height:1.7;max-width:30ch;margin-bottom:1.5rem}
+.f-socials{display:flex;gap:.8rem}
+.f-soc{width:34px;height:34px;border-radius:50%;border:1px solid rgba(184,135,58,.3);display:flex;align-items:center;justify-content:center;color:var(--gold-lt);transition:all .3s}
+.f-soc:hover{background:var(--gold);border-color:var(--gold);color:var(--white)}.f-soc svg{width:14px;height:14px}
+.fc h5{font-family:var(--fs);font-size:.6rem;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:1.2rem}
+.fc ul{list-style:none;display:flex;flex-direction:column;gap:.65rem}
+.fc a{font-family:var(--fb);font-size:.93rem;color:rgba(232,219,200,.55);transition:color .3s}.fc a:hover{color:var(--gold-lt)}
+.fb-bottom{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding-top:2.2rem;flex-wrap:wrap;gap:.8rem}
+.fb-bottom p,.fb-bottom a{font-family:var(--fs);font-size:.66rem;color:rgba(232,219,200,.28)}.fb-bottom a:hover{color:var(--gold-lt)}
+#btt{position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;background:var(--gold);border:none;border-radius:2px;cursor:inherit;display:flex;align-items:center;justify-content:center;color:var(--white);opacity:0;pointer-events:none;transition:opacity .4s,transform .3s;z-index:50}
+#btt.show{opacity:1;pointer-events:auto}#btt:hover{background:var(--gold-lt);transform:translateY(-2px)}#btt svg{width:15px;height:15px}
+@media(max-width:1024px){.fg{grid-template-columns:1fr 1fr;gap:2.5rem}.cards-3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.fg{grid-template-columns:1fr;gap:2rem}.cards-3,.cards-2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Top"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 13V3M3 8l5-5 5 5"/></svg></button>
+<div class="mob" id="mob">
+  <a href="index.html" onclick="closeMob()">Home</a>
+  <a href="menu.html" onclick="closeMob()">Menu</a>
+  <a href="story.html" onclick="closeMob()">Our Story</a>
+  <a href="craft.html" onclick="closeMob()">The Craft</a>
+  <a href="events.html" onclick="closeMob()">Events</a>
+  <a href="wholesale.html" onclick="closeMob()">Wholesale</a>
+  <a href="contact.html" class="mob-cta" onclick="closeMob()">Visit & Order</a>
+</div>
+<nav id="nav">
+  <a href="index.html" class="nav-logo">Maison Dorée</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="story.html">Our Story</a></li>
+    <li class="has-drop"><a href="#">More <span class="drop-arrow">▾</span></a>
+      <div class="drop">
+        <a href="craft.html">The Craft</a>
+        <a href="events.html">Events & Catering</a>
+        <a href="wholesale.html">Wholesale & Trade</a>
+      </div>
+    </li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Visit & Order</a>
+  <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<main>
+
+<section class="ph">
+  <div class="ph-bg" style="background-image:url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600&q=80')"></div>
+  <div class="ph-ov"></div><div class="ph-grain"></div>
+  <div class="ph-content">
+    <div class="ph-eye">Private dining · Catering · Celebrations</div>
+    <h1>Events &amp; <em>Catering</em></h1>
+    <p class="ph-sub">From intimate birthday dinners to wedding feasts for 300, we bring Maison Dorée to your table.</p>
+  </div>
+</section>
+<section class="sp" style="background:var(--white)">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,100px);align-items:start">
+      <div class="reveal">
+        <div class="lbl">What we offer</div>
+        <h2 class="h2" style="margin-bottom:1.5rem">Bread & pastry for <em>every occasion</em></h2>
+        <p class="body" style="margin-bottom:1.2rem">We've catered everything from intimate birthday dinners to weddings of 300 guests. What we bring to every event is the same thing we bring to the bakery every morning — obsessive attention to quality and a refusal to cut corners.</p>
+        <p class="body" style="margin-bottom:2.5rem">All catering is baked fresh on the day. We don't freeze, we don't reheat. We deliver, and we stay until everything is arranged exactly right.</p>
+        <div style="display:flex;flex-direction:column;gap:1rem">
+          <div style="padding:1.4rem;background:var(--cream);border-left:2px solid var(--gold)"><h4 style="font-family:var(--fd);font-size:1.08rem;color:var(--brown);margin-bottom:.35rem">Bread & Pastry Platters</h4><p style="font-family:var(--fb);font-size:.93rem;color:var(--muted)">Curated selections of our breads, viennoiseries, and pâtisserie. For 10–200 guests. Minimum 48 hours notice.</p></div>
+          <div style="padding:1.4rem;background:var(--cream);border-left:2px solid var(--gold)"><h4 style="font-family:var(--fd);font-size:1.08rem;color:var(--brown);margin-bottom:.35rem">Wedding Bread & Cake</h4><p style="font-family:var(--fb);font-size:.93rem;color:var(--muted)">A bespoke wedding bread display and celebration cake designed around your day. Consultation required. Min. 6 weeks notice.</p></div>
+          <div style="padding:1.4rem;background:var(--cream);border-left:2px solid var(--gold)"><h4 style="font-family:var(--fd);font-size:1.08rem;color:var(--brown);margin-bottom:.35rem">Corporate Breakfast</h4><p style="font-family:var(--fb);font-size:.93rem;color:var(--muted)">Morning deliveries of fresh bread and pastry boxes for meetings and office events. Weekly standing orders welcome.</p></div>
+          <div style="padding:1.4rem;background:var(--cream);border-left:2px solid var(--gold)"><h4 style="font-family:var(--fd);font-size:1.08rem;color:var(--brown);margin-bottom:.35rem">Bakery Evening Tours</h4><p style="font-family:var(--fb);font-size:.93rem;color:var(--muted)">Private evening tours of our kitchen for 6–12 guests, ending with a fresh-from-the-oven tasting. Quarterly availability.</p></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=800&q=80" alt="Celebration cakes" style="width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:2px;display:block;filter:brightness(.85) saturate(.9)">
+        <div style="background:var(--gold);padding:1.8rem 2rem;margin-top:2px;border-radius:0 0 2px 2px">
+          <p style="font-family:var(--fd);font-style:italic;font-size:1rem;color:var(--espresso);line-height:1.5;margin-bottom:.6rem">"Maison Dorée catered our wedding. Guests are still talking about the bread two years later."</p>
+          <span style="font-family:var(--fs);font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(26,14,5,.65)">— Camille & Pierre, married 2023</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sp" style="background:var(--cream-dk)">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:3.5rem">
+      <div class="lbl c reveal">Pricing guide</div>
+      <h2 class="h2 reveal d1" style="text-align:center">What to <em>expect</em></h2>
+    </div>
+    <div class="cards-3">
+      <div class="reveal" style="background:var(--white);padding:2.2rem;border-radius:2px;border-top:3px solid var(--gold)">
+        <h3 style="font-family:var(--fd);font-size:1.3rem;color:var(--brown);margin-bottom:.5rem">Pastry Platters</h3>
+        <div style="font-family:var(--fd);font-size:2rem;color:var(--gold);margin-bottom:.3rem">From $8</div>
+        <div style="font-family:var(--fs);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:1.4rem">per person · min. 10 guests</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.7rem">
+          <li style="font-family:var(--fb);font-size:.95rem;color:var(--muted);display:flex;gap:.6rem"><span style="color:var(--gold)">✦</span>Selection of 3 breads & 3 pastries</li>
+          <li style="font-family:var(--fb);font-size:.95rem;color:var(--muted);display:flex;gap:.6rem"><span style="color:var(--gold)">✦</span>Seasonal accompaniments included</li>
+          <li style="font-family:var(--fb);font-size:.95rem;color:var(--muted);display:flex;gap:.6rem"><span style="color:var(--gold)">✦</span>Delivery & setup within Portland</li>
+          <li style="font-family:var(--fb);font-size:.95rem;color:var(--muted);display:flex;gap:.6rem"><span style="color:var(--gold)">✦</span>48 hours notice required</li>
+        </ul>
+      </div>
+      <div class="reveal d1" style="background:var(--brown);padding:2.2rem;border-radius:2px;border-top:3px solid var(--gold-lt)">
+        <h3 style="font-family:var(--fd);font-size:1.3rem;color:var(--cream);margin-bottom:.5rem">Wedding Package</h3>
+        <div style="font-family:var(--fd);font-size:2rem;color:var(--gold-lt);margin-bottom:.3rem">From $600</div>
+        <div style="font-family:var(--fs);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(232,219,200,.45);margin-bottom:1.4rem">full package · up to 100 guests</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.7rem">
+          <li style="font-family:var(--fb);font-size:.95rem;color:rgba(232,219,200,.65);display:flex;gap:.6rem"><span style="color:var(--gold-lt)">✦</span>Bespoke wedding bread display</li>
+          <li style="font-family:var(--fb);font-size:.95rem;color:rgba(232,219,200,.65);display:flex;gap:.6rem"><span style="color:var(--gold-lt)">✦</span>3-tier celebration cake</li>
+          <li style="font-family:var(--fb);font-size:.95rem;color:rgba(232,219,200,.65);display:flex;gap:.6rem"><span style="color:var(--gold-lt)">✦</span>Consultation & tasting session</li>
+          <li style="font-family:var(--fb);font-size:.95rem;color:rgba(232,219,200,.65);display:flex;gap:.6rem"><span style="color:var(--gold-lt)">✦</span>On-site delivery & setup</li>
+          <li style="font-family:var(--fb);font-size:.95rem;color:rgba(232,219,200,.65);display:flex;gap:.6rem"><span style="color:var(--gold-lt)">✦</span>6 weeks minimum notice</li>
+        </ul>
+      </div>
+      <div class="reveal d2" style="background:var(--white);padding:2.2rem;border-radius:2px;border-top:3px solid var(--gold)">
+        <h3 style="font-family:var(--fd);font-size:1.3rem;color:var(--brown);margin-bottom:.5rem">Corporate Standing Order</h3>
+        <div style="font-family:var(--fd);font-size:2rem;color:var(--gold);margin-bottom:.3rem">From $120</div>
+        <div style="font-family:var(--fs);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:1.4rem">per weekly delivery</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.7rem">
+          <li style="font-family:var(--fb);font-size:.95rem;color:var(--muted);display:flex;gap:.6rem"><span style="color:var(--gold)">✦</span>Weekly or bi-weekly deliveries</li>
+          <li style="font-family:var(--fb);font-size:.95rem;color:var(--muted);display:flex;gap:.6rem"><span style="color:var(--gold)">✦</span>Customised selection each week</li>
+          <li style="font-family:var(--fb);font-size:.95rem;color:var(--muted);display:flex;gap:.6rem"><span style="color:var(--gold)">✦</span>Before 8 AM delivery guaranteed</li>
+          <li style="font-family:var(--fb);font-size:.95rem;color:var(--muted);display:flex;gap:.6rem"><span style="color:var(--gold)">✦</span>Invoice monthly. Cancel anytime.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sp" style="background:var(--espresso);text-align:center;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(184,135,58,.1) 0%,transparent 65%)"></div>
+  <div class="wrap" style="position:relative;z-index:2">
+    <div class="lbl c lt reveal" style="justify-content:center">Get the conversation started</div>
+    <h2 class="h2 lt reveal d1" style="text-align:center;margin-bottom:1rem">Let's plan <em style="color:var(--gold-lt)">your event</em></h2>
+    <p class="body reveal d2" style="color:rgba(232,219,200,.6);max-width:48ch;margin:0 auto 3rem;text-align:center">Tell us about your occasion and we'll respond within one business day with ideas and availability.</p>
+    <div class="reveal d3"><a href="contact.html" class="btn btn-gold">Start a Conversation <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a></div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="fg">
+    <div><div class="f-logo">Maison Dorée</div><div class="f-tag">Artisan Bakery & Pâtisserie · Est. 2009</div><p class="f-desc">A small bakery in the Old Town Quarter dedicated to the craft of slow, honest baking. Come early. The croissants go fast.</p>
+    <div class="f-socials"><a class="f-soc" href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a class="f-soc" href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></div></div>
+    <div class="fc"><h5>Navigate</h5><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="story.html">Our Story</a></li><li><a href="craft.html">The Craft</a></li><li><a href="events.html">Events</a></li><li><a href="wholesale.html">Wholesale</a></li><li><a href="contact.html">Visit & Order</a></li></ul></div>
+    <div class="fc"><h5>Offerings</h5><ul><li><a href="menu.html">Artisan Breads</a></li><li><a href="menu.html">Viennoiseries</a></li><li><a href="menu.html">Pâtisserie</a></li><li><a href="menu.html">Subscriptions</a></li><li><a href="contact.html">Custom Cakes</a></li></ul></div>
+    <div class="fc"><h5>Visit</h5><ul><li><a href="contact.html">14 Rue de la Paix</a></li><li><a href="contact.html">Portland, OR 97201</a></li><li><a href="tel:+15550421909">+1 (555) 042-1909</a></li><li><a href="mailto:hello@maisondoree.com">hello@maisondoree.com</a></li></ul></div>
+  </div>
+  <div class="fb-bottom"><p>© 2026 Maison Dorée Boulangerie. All rights reserved.</p><div style="display:flex;gap:1.5rem"><a href="#">Privacy</a><a href="#">Terms</a></div></div>
+</footer>
+<script>
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{document.getElementById('btt').classList.toggle('show',window.scrollY>500);});
+const ham=document.getElementById('ham'),mob=document.getElementById('mob');
+ham.addEventListener('click',()=>{ham.classList.toggle('open');mob.classList.toggle('open');document.body.style.overflow=mob.classList.contains('open')?'hidden':'';});
+function closeMob(){ham.classList.remove('open');mob.classList.remove('open');document.body.style.overflow='';}
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in');}),{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body></html>

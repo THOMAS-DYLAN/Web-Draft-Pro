@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="The story of Maison Dorée — how Élise Beaumont returned from Paris in 2009 and built one of Portland's most beloved artisan bakeries from a tiny rented kitchen.">
+<meta property="og:title" content="Our Story | Maison Dorée Artisan Bakery"><meta property="og:type" content="website">
+<title>Our Story | Maison Dorée Artisan Bakery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+
+/* FINAL CURSOR SYSTEM */
+html, body {
+  cursor: url('cursor-dough.svg') 2 2, auto;
+}
+
+a,
+button,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+label,
+select,
+.card,
+.menu-card,
+.item-card,
+.item-img,
+.process-item,
+.contact-item,
+.footer a,
+.nav-links a,
+.nav-cta,
+.ham,
+.mob a,
+.mob-cta,
+.drop a,
+img {
+  cursor: url('cursor-baked.svg') 2 2, pointer;
+}
+
+
+/* CURSOR SYSTEM */
+body {
+  cursor: url('cursor-dough.svg') 2 2, auto;
+}
+a:hover,
+button:hover,
+.nav-links a:hover,
+.nav-cta:hover,
+.btn:hover,
+.btn-gold:hover,
+.btn-outline-dk:hover,
+.btn-outline-lt:hover,
+.drop a:hover,
+.mob a:hover,
+.mob-cta:hover,
+.ham:hover,
+.card:hover,
+.menu-card:hover,
+.menu-item:hover,
+.item-card:hover,
+.item-img:hover,
+.process-item:hover,
+.contact-item:hover,
+.footer a:hover,
+img:hover {
+  cursor: url('cursor-baked.svg') 2 2, pointer;
+}
+
+:root{--cream:#F9F4EC;--cream-dk:#EFE6D5;--parchment:#E8DBC8;--gold:#B8873A;--gold-lt:#D4A855;--gold-pale:#F0DEB0;--brown:#3A2A1A;--brown-md:#5C3D22;--brown-lt:#8C6544;--espresso:#1A0E05;--rouge:#8B3A3A;--sage:#5A6B4F;--text:#2C1E10;--muted:#7A5C3E;--white:#FFFDF8;--fd:'Playfair Display',Georgia,serif;--fb:'Cormorant Garamond',Georgia,serif;--fs:'Jost',sans-serif;--pad:clamp(1.25rem,5vw,2.5rem);--max:1240px;--ease:cubic-bezier(.16,1,.3,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}body{background:var(--cream);color:var(--text);font-family:var(--fb);line-height:1.7;overflow-x:hidden}
+::selection{background:var(--gold-pale);color:var(--brown)}a{color:inherit;text-decoration:none}img{display:block;width:100%}
+@keyframes fadeIn{to{opacity:1}}@keyframes zoom{to{transform:scale(1)}}@keyframes up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:.9rem var(--pad);background:rgba(249,244,236,.97);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--parchment);display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--fd);font-size:1.45rem;font-style:italic;color:var(--brown)}
+.nav-links{display:flex;gap:0;list-style:none;align-items:center}
+.nav-links>li{position:relative}
+.nav-links a{font-family:var(--fs);font-size:.68rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding:.5rem .9rem;display:block;transition:color .3s;white-space:nowrap}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:.9rem;right:.9rem;height:1px;background:var(--gold-lt);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+.nav-links a:hover::after,.nav-links a.active::after{transform:scaleX(1)}
+.nav-links a:hover,.nav-links a.active{color:var(--brown)}
+.has-drop:hover .drop{opacity:1;visibility:visible;transform:translateY(0)}
+.drop{position:absolute;top:100%;left:0;background:var(--white);border:1px solid var(--parchment);border-radius:2px;box-shadow:0 8px 32px rgba(26,14,5,.12);padding:.5rem 0;min-width:180px;opacity:0;visibility:hidden;transform:translateY(8px);transition:all .3s var(--ease)}
+.drop a{font-size:.64rem;padding:.55rem 1.2rem;color:var(--muted);display:block}.drop a:hover{color:var(--brown);background:var(--cream)}.drop a::after{display:none}
+.drop-arrow{font-size:.55rem;margin-left:.3rem;opacity:.6}
+.nav-cta{font-family:var(--fs);font-size:.68rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;padding:.6rem 1.4rem;border:1px solid var(--gold);color:var(--brown);border-radius:2px;transition:all .3s;margin-left:.5rem}
+.nav-cta:hover{background:var(--gold);color:var(--white)}
+.ham{display:none;flex-direction:column;gap:5px;cursor:inherit;padding:4px;background:none;border:none}
+.ham span{display:block;width:22px;height:1.5px;background:var(--brown);transition:all .3s}
+.ham.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}.ham.open span:nth-child(2){opacity:0}.ham.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.mob{display:none;position:fixed;inset:0;background:var(--brown);z-index:99;flex-direction:column;align-items:center;justify-content:center;gap:2rem;opacity:0;transition:opacity .4s}
+.mob.open{display:flex;opacity:1}
+.mob a{font-family:var(--fd);font-size:clamp(1.6rem,4.5vw,2.5rem);font-style:italic;color:var(--cream);transition:color .3s}.mob a:hover{color:var(--gold-lt)}
+.mob-cta{font-family:var(--fs);font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;padding:.75rem 2rem;border:1px solid var(--gold);color:var(--gold-lt);border-radius:2px;margin-top:.5rem}
+@media(max-width:900px){.nav-links,.nav-cta{display:none}.ham{display:flex}}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}.sp{padding:clamp(72px,10vw,140px) 0}
+.lbl{font-family:var(--fs);font-size:.63rem;font-weight:500;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem;display:flex;align-items:center;gap:.8rem}
+.lbl::before{content:'';width:28px;height:1px;background:var(--gold);flex-shrink:0}.lbl.c{justify-content:center}.lbl.c::before{display:none}.lbl.lt{color:var(--gold-lt)}.lbl.lt::before{background:var(--gold-lt)}
+.h2{font-family:var(--fd);font-size:clamp(1.9rem,4vw,3.4rem);font-weight:400;line-height:1.12;color:var(--brown);margin-bottom:1.2rem}.h2 em{font-style:italic;color:var(--brown-md)}.h2.lt{color:var(--cream)}
+.body{font-family:var(--fb);font-size:1.05rem;font-weight:300;color:var(--muted);line-height:1.85;max-width:52ch}
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .9s var(--ease),transform .9s var(--ease)}.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--fs);font-size:.72rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;padding:.95rem 2.2rem;border-radius:2px;transition:all .3s}
+.btn-gold{background:var(--gold);color:var(--white);border:1px solid var(--gold)}.btn-gold:hover{background:var(--gold-lt);border-color:var(--gold-lt);transform:translateY(-1px);box-shadow:0 8px 24px rgba(184,135,58,.35)}
+.btn-outline-dk{background:transparent;color:var(--brown);border:1px solid var(--parchment)}.btn-outline-dk:hover{border-color:var(--gold);color:var(--gold)}
+.btn-outline-lt{background:transparent;color:var(--cream);border:1px solid rgba(249,244,236,.35)}.btn-outline-lt:hover{border-color:var(--gold-lt);color:var(--gold-lt)}
+/* Page hero */
+.ph{position:relative;min-height:52vh;display:flex;align-items:flex-end;overflow:hidden;padding-top:68px}
+.ph-bg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.04);animation:zoom 10s ease-out forwards}
+.ph-ov{position:absolute;inset:0;background:linear-gradient(165deg,rgba(26,14,5,.78) 0%,rgba(58,42,26,.5) 55%,rgba(26,14,5,.82) 100%)}
+.ph-grain{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");opacity:.5;pointer-events:none}
+.ph-content{position:relative;z-index:2;max-width:var(--max);margin:0 auto;padding:3.5rem var(--pad) 4.5rem;width:100%}
+.ph-eye{font-family:var(--fs);font-size:.65rem;font-weight:500;letter-spacing:.35em;text-transform:uppercase;color:var(--gold-lt);display:flex;align-items:center;gap:1rem;margin-bottom:1.2rem;opacity:0;animation:up .9s var(--ease) .3s forwards}
+.ph-eye::before{content:'';width:40px;height:1px;background:var(--gold)}
+.ph h1{font-family:var(--fd);font-size:clamp(2.8rem,7vw,7rem);font-weight:400;line-height:1.0;color:var(--white);opacity:0;animation:up 1s var(--ease) .5s forwards}
+.ph h1 em{font-style:italic;color:var(--gold-pale)}
+.ph-sub{font-family:var(--fb);font-size:clamp(1rem,1.5vw,1.25rem);font-weight:300;font-style:italic;color:rgba(255,255,255,.7);max-width:46ch;margin-top:1rem;line-height:1.65;opacity:0;animation:up 1s var(--ease) .7s forwards}
+/* Cards */
+.card{background:var(--white);border-radius:2px;overflow:hidden;transition:transform .4s var(--ease),box-shadow .4s}
+.card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(26,14,5,.12)}
+.card-img{height:210px;overflow:hidden;position:relative}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease);display:block}
+.card:hover .card-img img{transform:scale(1.06)}
+.card-tag{position:absolute;top:1rem;right:1rem;font-family:var(--fs);font-size:.57rem;letter-spacing:.14em;text-transform:uppercase;padding:.3rem .7rem;background:var(--gold);color:var(--white);border-radius:2px}
+.card-tag.r{background:var(--rouge)}.card-tag.s{background:var(--sage)}
+.card-body{padding:1.4rem 1.7rem 1.7rem}
+.card-body h3{font-family:var(--fd);font-size:1.18rem;font-weight:600;color:var(--brown);margin-bottom:.4rem}
+.card-body p{font-family:var(--fb);font-size:.92rem;color:var(--muted);line-height:1.6;margin-bottom:.9rem}
+.card-footer{display:flex;align-items:center;justify-content:space-between;padding-top:.85rem;border-top:1px solid var(--cream-dk)}
+.card-price{font-family:var(--fd);font-size:1.12rem;color:var(--gold);font-weight:600}
+.card-note{font-family:var(--fs);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-lt)}
+.cards-2{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+.cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+/* Footer */
+footer{background:var(--brown);padding:4.5rem var(--pad) 2.5rem}
+.fg{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:3.5rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.08)}
+.f-logo{font-family:var(--fd);font-size:1.9rem;font-style:italic;color:var(--gold-lt);margin-bottom:.4rem}
+.f-tag{font-family:var(--fs);font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(232,219,200,.35);margin-bottom:1.2rem}
+.f-desc{font-family:var(--fb);font-size:.93rem;color:rgba(232,219,200,.55);line-height:1.7;max-width:30ch;margin-bottom:1.5rem}
+.f-socials{display:flex;gap:.8rem}
+.f-soc{width:34px;height:34px;border-radius:50%;border:1px solid rgba(184,135,58,.3);display:flex;align-items:center;justify-content:center;color:var(--gold-lt);transition:all .3s}
+.f-soc:hover{background:var(--gold);border-color:var(--gold);color:var(--white)}.f-soc svg{width:14px;height:14px}
+.fc h5{font-family:var(--fs);font-size:.6rem;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:1.2rem}
+.fc ul{list-style:none;display:flex;flex-direction:column;gap:.65rem}
+.fc a{font-family:var(--fb);font-size:.93rem;color:rgba(232,219,200,.55);transition:color .3s}.fc a:hover{color:var(--gold-lt)}
+.fb-bottom{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding-top:2.2rem;flex-wrap:wrap;gap:.8rem}
+.fb-bottom p,.fb-bottom a{font-family:var(--fs);font-size:.66rem;color:rgba(232,219,200,.28)}.fb-bottom a:hover{color:var(--gold-lt)}
+#btt{position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;background:var(--gold);border:none;border-radius:2px;cursor:inherit;display:flex;align-items:center;justify-content:center;color:var(--white);opacity:0;pointer-events:none;transition:opacity .4s,transform .3s;z-index:50}
+#btt.show{opacity:1;pointer-events:auto}#btt:hover{background:var(--gold-lt);transform:translateY(-2px)}#btt svg{width:15px;height:15px}
+@media(max-width:1024px){.fg{grid-template-columns:1fr 1fr;gap:2.5rem}.cards-3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.fg{grid-template-columns:1fr;gap:2rem}.cards-3,.cards-2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Top"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 13V3M3 8l5-5 5 5"/></svg></button>
+<div class="mob" id="mob">
+  <a href="index.html" onclick="closeMob()">Home</a>
+  <a href="menu.html" onclick="closeMob()">Menu</a>
+  <a href="story.html" onclick="closeMob()">Our Story</a>
+  <a href="craft.html" onclick="closeMob()">The Craft</a>
+  <a href="events.html" onclick="closeMob()">Events</a>
+  <a href="wholesale.html" onclick="closeMob()">Wholesale</a>
+  <a href="contact.html" class="mob-cta" onclick="closeMob()">Visit & Order</a>
+</div>
+<nav id="nav">
+  <a href="index.html" class="nav-logo">Maison Dorée</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="story.html" class="active">Our Story</a></li>
+    <li class="has-drop"><a href="#">More <span class="drop-arrow">▾</span></a>
+      <div class="drop">
+        <a href="craft.html">The Craft</a>
+        <a href="events.html">Events & Catering</a>
+        <a href="wholesale.html">Wholesale & Trade</a>
+      </div>
+    </li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Visit & Order</a>
+  <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<main>
+
+<section class="ph">
+  <div class="ph-bg" style="background-image:url('https://images.unsplash.com/photo-1574085733277-851d9d856a3a?w=1600&q=80')"></div>
+  <div class="ph-ov"></div><div class="ph-grain"></div>
+  <div class="ph-content">
+    <div class="ph-eye">Est. 2009 · Portland, OR</div>
+    <h1>Our <em>Story</em></h1>
+    <p class="ph-sub">Fifteen years of flour, patience, and an obsessive refusal to compromise on anything that touches the bread.</p>
+  </div>
+</section>
+<section class="sp" style="background:var(--white)">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,100px);align-items:center">
+      <div>
+        <div class="lbl reveal">The beginning</div>
+        <h2 class="h2 reveal d1">Flour, patience, <em>and fifteen years of practice.</em></h2>
+        <p class="body reveal d2" style="margin-bottom:1rem">Maison Dorée began in 2009 in a tiny rented kitchen, when Élise Beaumont returned from five years training in Lyon and Paris with one simple conviction: good bread cannot be rushed.</p>
+        <p class="body reveal d3" style="margin-bottom:1rem">Every loaf here begins 48 hours before it reaches your hands — on a living sourdough starter, named Marguerite, that has been fed every single day since the first week we opened. We use heritage wheat milled within 50 miles, cultured butters from a single farm, and whatever the season brings.</p>
+        <p class="body reveal d4">We have never used a bread improver. We never will.</p>
+        <div style="font-family:var(--fd);font-size:1.55rem;font-style:italic;color:var(--brown);margin-top:2rem;padding-top:1.8rem;border-top:1px solid var(--parchment)" class="reveal d4">Élise Beaumont<small style="display:block;font-family:var(--fs);font-style:normal;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:4px">Head Baker & Founder</small></div>
+      </div>
+      <div class="reveal" style="position:relative">
+        <img src="https://images.unsplash.com/photo-1574085733277-851d9d856a3a?w=800&q=80" alt="Élise in the bakery" style="width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:2px;display:block;filter:brightness(.85) saturate(.9)">
+        <div style="position:absolute;bottom:32px;left:-24px;background:var(--gold);padding:1.6rem 2rem;border-radius:2px;max-width:210px;box-shadow:0 12px 32px rgba(0,0,0,.25)">
+          <p style="font-family:var(--fd);font-style:italic;font-size:.95rem;color:var(--espresso);line-height:1.5;margin-bottom:.6rem">"The oven doesn't lie. What you put in is what you get back."</p>
+          <cite style="font-family:var(--fs);font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(26,14,5,.65);font-style:normal">— Élise Beaumont</cite>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sp" style="background:var(--cream-dk)">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:clamp(48px,7vw,80px)">
+      <div class="lbl c reveal">Our journey</div>
+      <h2 class="h2 reveal d1" style="text-align:center">Fifteen years of <em>slow bread</em></h2>
+    </div>
+    <div style="max-width:700px;margin:0 auto;display:flex;flex-direction:column;gap:0">
+      <div class="reveal" style="display:grid;grid-template-columns:80px 1px 1fr;gap:0 28px;padding-bottom:48px">
+        <div style="font-family:var(--fd);font-size:1.4rem;color:var(--gold);padding-top:4px">2009</div>
+        <div style="background:var(--parchment);position:relative"><div style="position:absolute;top:8px;left:50%;transform:translateX(-50%);width:10px;height:10px;border-radius:50%;background:var(--gold);border:2px solid var(--cream-dk)"></div></div>
+        <div style="padding-left:28px"><h4 style="font-family:var(--fd);font-size:1.1rem;color:var(--brown);margin-bottom:6px">The Beginning</h4><p class="body">Élise opens Maison Dorée in a 400sqft rented kitchen. 12 loaves a day. Sold out by 9 AM every morning within the first week.</p></div>
+      </div>
+      <div class="reveal d1" style="display:grid;grid-template-columns:80px 1px 1fr;gap:0 28px;padding-bottom:48px">
+        <div style="font-family:var(--fd);font-size:1.4rem;color:var(--gold);padding-top:4px">2012</div>
+        <div style="background:var(--parchment);position:relative"><div style="position:absolute;top:8px;left:50%;transform:translateX(-50%);width:10px;height:10px;border-radius:50%;background:var(--gold);border:2px solid var(--cream-dk)"></div></div>
+        <div style="padding-left:28px"><h4 style="font-family:var(--fd);font-size:1.1rem;color:var(--brown);margin-bottom:6px">First Farmers Market Award</h4><p class="body">Best Artisan Bread at the Portland Farmers Market. The queue the following Saturday stretched around the block for the first time.</p></div>
+      </div>
+      <div class="reveal d2" style="display:grid;grid-template-columns:80px 1px 1fr;gap:0 28px;padding-bottom:48px">
+        <div style="font-family:var(--fd);font-size:1.4rem;color:var(--gold);padding-top:4px">2015</div>
+        <div style="background:var(--parchment);position:relative"><div style="position:absolute;top:8px;left:50%;transform:translateX(-50%);width:10px;height:10px;border-radius:50%;background:var(--gold);border:2px solid var(--cream-dk)"></div></div>
+        <div style="padding-left:28px"><h4 style="font-family:var(--fd);font-size:1.1rem;color:var(--brown);margin-bottom:6px">Permanent Home</h4><p class="body">Move to 14 Rue de la Paix in the Old Town Quarter. First proper stone deck oven. Croissants added to the morning menu.</p></div>
+      </div>
+      <div class="reveal d3" style="display:grid;grid-template-columns:80px 1px 1fr;gap:0 28px;padding-bottom:48px">
+        <div style="font-family:var(--fd);font-size:1.4rem;color:var(--gold);padding-top:4px">2018</div>
+        <div style="background:var(--parchment);position:relative"><div style="position:absolute;top:8px;left:50%;transform:translateX(-50%);width:10px;height:10px;border-radius:50%;background:var(--gold);border:2px solid var(--cream-dk)"></div></div>
+        <div style="padding-left:28px"><h4 style="font-family:var(--fd);font-size:1.1rem;color:var(--brown);margin-bottom:6px">Pâtisserie Launch</h4><p class="body">Claire Fontaine joins as Head Pâtissier. The full cake and tart programme begins — three-month waitlist for custom cakes within weeks.</p></div>
+      </div>
+      <div class="reveal d4" style="display:grid;grid-template-columns:80px 1px 1fr;gap:0 28px">
+        <div style="font-family:var(--fd);font-size:1.4rem;color:var(--gold);padding-top:4px">2024</div>
+        <div style="background:var(--parchment);position:relative"><div style="position:absolute;top:8px;left:50%;transform:translateX(-50%);width:10px;height:10px;border-radius:50%;background:var(--gold);border:2px solid var(--cream-dk)"></div></div>
+        <div style="padding-left:28px"><h4 style="font-family:var(--fd);font-size:1.1rem;color:var(--brown);margin-bottom:6px">Subscription Launch</h4><p class="body">Weekly bread subscription boxes launch for our most loyal customers. First allocation sold out in 47 minutes.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sp" style="background:var(--espresso);text-align:center;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(184,135,58,.1) 0%,transparent 65%)"></div>
+  <div class="wrap" style="position:relative;z-index:2">
+    <div class="lbl c lt reveal" style="justify-content:center">Awards & Recognition</div>
+    <h2 class="h2 lt reveal d1" style="text-align:center;margin-bottom:clamp(40px,6vw,72px)">Press &amp; <em style="color:var(--gold-lt)">Awards</em></h2>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px;max-width:1000px;margin:0 auto" class="reveal d2">
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:2rem;text-align:center;transition:border-color .3s" onmouseenter="this.style.borderColor='rgba(184,135,58,.3)'" onmouseleave="this.style.borderColor='rgba(255,255,255,.08)'"><div style="font-size:2rem;margin-bottom:.8rem">🏆</div><h4 style="font-family:var(--fd);font-size:1rem;color:var(--cream);margin-bottom:.4rem">Best Artisan Bread</h4><p style="font-family:var(--fb);font-size:.85rem;color:rgba(232,219,200,.55)">Portland Farmers Market, 2012, 2015, 2019, 2022, 2024</p></div>
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:2rem;text-align:center;transition:border-color .3s" onmouseenter="this.style.borderColor='rgba(184,135,58,.3)'" onmouseleave="this.style.borderColor='rgba(255,255,255,.08)'"><div style="font-size:2rem;margin-bottom:.8rem">⭐</div><h4 style="font-family:var(--fd);font-size:1rem;color:var(--cream);margin-bottom:.4rem">Oregon's Best Bakery</h4><p style="font-family:var(--fb);font-size:.85rem;color:rgba(232,219,200,.55)">Portland Monthly Magazine, 2020 & 2023</p></div>
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:2rem;text-align:center;transition:border-color .3s" onmouseenter="this.style.borderColor='rgba(184,135,58,.3)'" onmouseleave="this.style.borderColor='rgba(255,255,255,.08)'"><div style="font-size:2rem;margin-bottom:.8rem">🥐</div><h4 style="font-family:var(--fd);font-size:1rem;color:var(--cream);margin-bottom:.4rem">Best Croissant, Pacific NW</h4><p style="font-family:var(--fb);font-size:.85rem;color:rgba(232,219,200,.55)">Eater Portland, 2021</p></div>
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:2rem;text-align:center;transition:border-color .3s" onmouseenter="this.style.borderColor='rgba(184,135,42,.3)'" onmouseleave="this.style.borderColor='rgba(255,255,255,.08)'"><div style="font-size:2rem;margin-bottom:.8rem">📖</div><h4 style="font-family:var(--fd);font-size:1rem;color:var(--cream);margin-bottom:.4rem">Featured in Bon Appétit</h4><p style="font-family:var(--fb);font-size:.85rem;color:rgba(232,219,200,.55)">"12 Best Bakeries in America," 2023</p></div>
+    </div>
+    <div style="margin-top:3.5rem" class="reveal d3"><a href="contact.html" class="btn btn-gold">Visit Us</a></div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="fg">
+    <div><div class="f-logo">Maison Dorée</div><div class="f-tag">Artisan Bakery & Pâtisserie · Est. 2009</div><p class="f-desc">A small bakery in the Old Town Quarter dedicated to the craft of slow, honest baking. Come early. The croissants go fast.</p>
+    <div class="f-socials"><a class="f-soc" href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a class="f-soc" href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></div></div>
+    <div class="fc"><h5>Navigate</h5><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="story.html">Our Story</a></li><li><a href="craft.html">The Craft</a></li><li><a href="events.html">Events</a></li><li><a href="wholesale.html">Wholesale</a></li><li><a href="contact.html">Visit & Order</a></li></ul></div>
+    <div class="fc"><h5>Offerings</h5><ul><li><a href="menu.html">Artisan Breads</a></li><li><a href="menu.html">Viennoiseries</a></li><li><a href="menu.html">Pâtisserie</a></li><li><a href="menu.html">Subscriptions</a></li><li><a href="contact.html">Custom Cakes</a></li></ul></div>
+    <div class="fc"><h5>Visit</h5><ul><li><a href="contact.html">14 Rue de la Paix</a></li><li><a href="contact.html">Portland, OR 97201</a></li><li><a href="tel:+15550421909">+1 (555) 042-1909</a></li><li><a href="mailto:hello@maisondoree.com">hello@maisondoree.com</a></li></ul></div>
+  </div>
+  <div class="fb-bottom"><p>© 2026 Maison Dorée Boulangerie. All rights reserved.</p><div style="display:flex;gap:1.5rem"><a href="#">Privacy</a><a href="#">Terms</a></div></div>
+</footer>
+<script>
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{document.getElementById('btt').classList.toggle('show',window.scrollY>500);});
+const ham=document.getElementById('ham'),mob=document.getElementById('mob');
+ham.addEventListener('click',()=>{ham.classList.toggle('open');mob.classList.toggle('open');document.body.style.overflow=mob.classList.contains('open')?'hidden':'';});
+function closeMob(){ham.classList.remove('open');mob.classList.remove('open');document.body.style.overflow='';}
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in');}),{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body></html>

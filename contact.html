@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Find Maison Dorée at 14 Rue de la Paix in Portland's Old Town Quarter. Opening hours, directions, and order enquiries.">
+<title>Visit & Order | Maison Dorée Artisan Bakery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+
+/* FINAL CURSOR SYSTEM */
+html, body {
+  cursor: url('cursor-dough.svg') 2 2, auto;
+}
+
+a,
+button,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+label,
+select,
+.card,
+.menu-card,
+.item-card,
+.item-img,
+.process-item,
+.contact-item,
+.footer a,
+.nav-links a,
+.nav-cta,
+.ham,
+.mob a,
+.mob-cta,
+.drop a,
+img {
+  cursor: url('cursor-baked.svg') 2 2, pointer;
+}
+
+
+/* CURSOR SYSTEM */
+body {
+  cursor: url('cursor-dough.svg') 2 2, auto;
+}
+a:hover,
+button:hover,
+.nav-links a:hover,
+.nav-cta:hover,
+.btn:hover,
+.btn-gold:hover,
+.btn-outline-dk:hover,
+.btn-outline-lt:hover,
+.drop a:hover,
+.mob a:hover,
+.mob-cta:hover,
+.ham:hover,
+.card:hover,
+.menu-card:hover,
+.menu-item:hover,
+.item-card:hover,
+.item-img:hover,
+.process-item:hover,
+.contact-item:hover,
+.footer a:hover,
+img:hover {
+  cursor: url('cursor-baked.svg') 2 2, pointer;
+}
+
+:root{--cream:#F9F4EC;--cream-dk:#EFE6D5;--parchment:#E8DBC8;--gold:#B8873A;--gold-lt:#D4A855;--gold-pale:#F0DEB0;--brown:#3A2A1A;--brown-md:#5C3D22;--brown-lt:#8C6544;--espresso:#1A0E05;--rouge:#8B3A3A;--sage:#5A6B4F;--text:#2C1E10;--muted:#7A5C3E;--white:#FFFDF8;--fd:'Playfair Display',Georgia,serif;--fb:'Cormorant Garamond',Georgia,serif;--fs:'Jost',sans-serif;--pad:clamp(1.25rem,5vw,2.5rem);--max:1240px;--ease:cubic-bezier(.16,1,.3,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}body{background:var(--cream);color:var(--text);font-family:var(--fb);line-height:1.7;overflow-x:hidden}
+::selection{background:var(--gold-pale);color:var(--brown)}a{color:inherit;text-decoration:none}img{display:block;width:100%}
+@keyframes fadeIn{to{opacity:1}}@keyframes zoom{to{transform:scale(1)}}@keyframes up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:.9rem var(--pad);background:rgba(249,244,236,.97);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--parchment);display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--fd);font-size:1.45rem;font-style:italic;color:var(--brown)}
+.nav-links{display:flex;gap:0;list-style:none;align-items:center}
+.nav-links>li{position:relative}
+.nav-links a{font-family:var(--fs);font-size:.68rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding:.5rem .9rem;display:block;transition:color .3s;white-space:nowrap}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:.9rem;right:.9rem;height:1px;background:var(--gold-lt);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+.nav-links a:hover::after,.nav-links a.active::after{transform:scaleX(1)}
+.nav-links a:hover,.nav-links a.active{color:var(--brown)}
+.has-drop:hover .drop{opacity:1;visibility:visible;transform:translateY(0)}
+.drop{position:absolute;top:100%;left:0;background:var(--white);border:1px solid var(--parchment);border-radius:2px;box-shadow:0 8px 32px rgba(26,14,5,.12);padding:.5rem 0;min-width:180px;opacity:0;visibility:hidden;transform:translateY(8px);transition:all .3s var(--ease)}
+.drop a{font-size:.64rem;padding:.55rem 1.2rem;color:var(--muted);display:block}.drop a:hover{color:var(--brown);background:var(--cream)}.drop a::after{display:none}
+.drop-arrow{font-size:.55rem;margin-left:.3rem;opacity:.6}
+.nav-cta{font-family:var(--fs);font-size:.68rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;padding:.6rem 1.4rem;border:1px solid var(--gold);color:var(--brown);border-radius:2px;transition:all .3s;margin-left:.5rem}
+.nav-cta:hover{background:var(--gold);color:var(--white)}
+.ham{display:none;flex-direction:column;gap:5px;cursor:inherit;padding:4px;background:none;border:none}
+.ham span{display:block;width:22px;height:1.5px;background:var(--brown);transition:all .3s}
+.ham.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}.ham.open span:nth-child(2){opacity:0}.ham.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.mob{display:none;position:fixed;inset:0;background:var(--brown);z-index:99;flex-direction:column;align-items:center;justify-content:center;gap:2rem;opacity:0;transition:opacity .4s}
+.mob.open{display:flex;opacity:1}
+.mob a{font-family:var(--fd);font-size:clamp(1.6rem,4.5vw,2.5rem);font-style:italic;color:var(--cream);transition:color .3s}.mob a:hover{color:var(--gold-lt)}
+.mob-cta{font-family:var(--fs);font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;padding:.75rem 2rem;border:1px solid var(--gold);color:var(--gold-lt);border-radius:2px;margin-top:.5rem}
+@media(max-width:900px){.nav-links,.nav-cta{display:none}.ham{display:flex}}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}.sp{padding:clamp(72px,10vw,140px) 0}
+.lbl{font-family:var(--fs);font-size:.63rem;font-weight:500;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem;display:flex;align-items:center;gap:.8rem}
+.lbl::before{content:'';width:28px;height:1px;background:var(--gold);flex-shrink:0}.lbl.c{justify-content:center}.lbl.c::before{display:none}.lbl.lt{color:var(--gold-lt)}.lbl.lt::before{background:var(--gold-lt)}
+.h2{font-family:var(--fd);font-size:clamp(1.9rem,4vw,3.4rem);font-weight:400;line-height:1.12;color:var(--brown);margin-bottom:1.2rem}.h2 em{font-style:italic;color:var(--brown-md)}.h2.lt{color:var(--cream)}
+.body{font-family:var(--fb);font-size:1.05rem;font-weight:300;color:var(--muted);line-height:1.85;max-width:52ch}
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .9s var(--ease),transform .9s var(--ease)}.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--fs);font-size:.72rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;padding:.95rem 2.2rem;border-radius:2px;transition:all .3s}
+.btn-gold{background:var(--gold);color:var(--white);border:1px solid var(--gold)}.btn-gold:hover{background:var(--gold-lt);border-color:var(--gold-lt);transform:translateY(-1px);box-shadow:0 8px 24px rgba(184,135,58,.35)}
+.btn-outline-dk{background:transparent;color:var(--brown);border:1px solid var(--parchment)}.btn-outline-dk:hover{border-color:var(--gold);color:var(--gold)}
+.btn-outline-lt{background:transparent;color:var(--cream);border:1px solid rgba(249,244,236,.35)}.btn-outline-lt:hover{border-color:var(--gold-lt);color:var(--gold-lt)}
+/* Page hero */
+.ph{position:relative;min-height:52vh;display:flex;align-items:flex-end;overflow:hidden;padding-top:68px}
+.ph-bg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.04);animation:zoom 10s ease-out forwards}
+.ph-ov{position:absolute;inset:0;background:linear-gradient(165deg,rgba(26,14,5,.78) 0%,rgba(58,42,26,.5) 55%,rgba(26,14,5,.82) 100%)}
+.ph-grain{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");opacity:.5;pointer-events:none}
+.ph-content{position:relative;z-index:2;max-width:var(--max);margin:0 auto;padding:3.5rem var(--pad) 4.5rem;width:100%}
+.ph-eye{font-family:var(--fs);font-size:.65rem;font-weight:500;letter-spacing:.35em;text-transform:uppercase;color:var(--gold-lt);display:flex;align-items:center;gap:1rem;margin-bottom:1.2rem;opacity:0;animation:up .9s var(--ease) .3s forwards}
+.ph-eye::before{content:'';width:40px;height:1px;background:var(--gold)}
+.ph h1{font-family:var(--fd);font-size:clamp(2.8rem,7vw,7rem);font-weight:400;line-height:1.0;color:var(--white);opacity:0;animation:up 1s var(--ease) .5s forwards}
+.ph h1 em{font-style:italic;color:var(--gold-pale)}
+.ph-sub{font-family:var(--fb);font-size:clamp(1rem,1.5vw,1.25rem);font-weight:300;font-style:italic;color:rgba(255,255,255,.7);max-width:46ch;margin-top:1rem;line-height:1.65;opacity:0;animation:up 1s var(--ease) .7s forwards}
+/* Cards */
+.card{background:var(--white);border-radius:2px;overflow:hidden;transition:transform .4s var(--ease),box-shadow .4s}
+.card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(26,14,5,.12)}
+.card-img{height:210px;overflow:hidden;position:relative}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease);display:block}
+.card:hover .card-img img{transform:scale(1.06)}
+.card-tag{position:absolute;top:1rem;right:1rem;font-family:var(--fs);font-size:.57rem;letter-spacing:.14em;text-transform:uppercase;padding:.3rem .7rem;background:var(--gold);color:var(--white);border-radius:2px}
+.card-tag.r{background:var(--rouge)}.card-tag.s{background:var(--sage)}
+.card-body{padding:1.4rem 1.7rem 1.7rem}
+.card-body h3{font-family:var(--fd);font-size:1.18rem;font-weight:600;color:var(--brown);margin-bottom:.4rem}
+.card-body p{font-family:var(--fb);font-size:.92rem;color:var(--muted);line-height:1.6;margin-bottom:.9rem}
+.card-footer{display:flex;align-items:center;justify-content:space-between;padding-top:.85rem;border-top:1px solid var(--cream-dk)}
+.card-price{font-family:var(--fd);font-size:1.12rem;color:var(--gold);font-weight:600}
+.card-note{font-family:var(--fs);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-lt)}
+.cards-2{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+.cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+/* Footer */
+footer{background:var(--brown);padding:4.5rem var(--pad) 2.5rem}
+.fg{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:3.5rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.08)}
+.f-logo{font-family:var(--fd);font-size:1.9rem;font-style:italic;color:var(--gold-lt);margin-bottom:.4rem}
+.f-tag{font-family:var(--fs);font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(232,219,200,.35);margin-bottom:1.2rem}
+.f-desc{font-family:var(--fb);font-size:.93rem;color:rgba(232,219,200,.55);line-height:1.7;max-width:30ch;margin-bottom:1.5rem}
+.f-socials{display:flex;gap:.8rem}
+.f-soc{width:34px;height:34px;border-radius:50%;border:1px solid rgba(184,135,58,.3);display:flex;align-items:center;justify-content:center;color:var(--gold-lt);transition:all .3s}
+.f-soc:hover{background:var(--gold);border-color:var(--gold);color:var(--white)}.f-soc svg{width:14px;height:14px}
+.fc h5{font-family:var(--fs);font-size:.6rem;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:1.2rem}
+.fc ul{list-style:none;display:flex;flex-direction:column;gap:.65rem}
+.fc a{font-family:var(--fb);font-size:.93rem;color:rgba(232,219,200,.55);transition:color .3s}.fc a:hover{color:var(--gold-lt)}
+.fb-bottom{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding-top:2.2rem;flex-wrap:wrap;gap:.8rem}
+.fb-bottom p,.fb-bottom a{font-family:var(--fs);font-size:.66rem;color:rgba(232,219,200,.28)}.fb-bottom a:hover{color:var(--gold-lt)}
+#btt{position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;background:var(--gold);border:none;border-radius:2px;cursor:inherit;display:flex;align-items:center;justify-content:center;color:var(--white);opacity:0;pointer-events:none;transition:opacity .4s,transform .3s;z-index:50}
+#btt.show{opacity:1;pointer-events:auto}#btt:hover{background:var(--gold-lt);transform:translateY(-2px)}#btt svg{width:15px;height:15px}
+@media(max-width:1024px){.fg{grid-template-columns:1fr 1fr;gap:2.5rem}.cards-3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.fg{grid-template-columns:1fr;gap:2rem}.cards-3,.cards-2{grid-template-columns:1fr}}
+
+.v-card{background:var(--cream);padding:2rem;border-left:2px solid var(--gold);border-radius:0 2px 2px 0;transition:transform .3s}.v-card:hover{transform:translateY(-3px)}
+.v-icon{width:44px;height:44px;background:var(--gold-pale);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:1.1rem;color:var(--gold)}.v-icon svg{width:20px;height:20px}
+.v-card h3{font-family:var(--fd);font-size:1.12rem;font-weight:600;color:var(--brown);margin-bottom:.6rem}
+.v-card p,.v-card a{font-family:var(--fb);font-size:.98rem;color:var(--muted);line-height:1.7;display:block}
+.v-card a{color:var(--gold);margin-top:.4rem;transition:color .3s}.v-card a:hover{color:var(--brown)}
+.h-row{display:flex;justify-content:space-between;align-items:center;font-family:var(--fb);font-size:.97rem;padding:.75rem 0;border-bottom:1px solid var(--cream-dk)}
+.h-day{color:var(--brown);font-weight:500}.h-time{color:var(--muted)}.h-closed{color:var(--brown-lt);font-style:italic}
+.h-badge{font-family:var(--fs);font-size:.55rem;letter-spacing:.14em;text-transform:uppercase;background:var(--sage);color:var(--white);padding:.2rem .6rem;border-radius:2px;margin-left:.5rem}
+.f-wrap{background:var(--white);border:1px solid var(--parchment);padding:clamp(28px,4vw,52px);border-radius:2px}
+.f-wrap h3{font-family:var(--fd);font-size:1.6rem;color:var(--brown);margin-bottom:.5rem}
+.f-wrap>p{font-family:var(--fb);font-size:.97rem;color:var(--muted);margin-bottom:2rem}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.f-field{margin-bottom:13px}.f-field.full{grid-column:1/-1}
+.f-field label{display:block;font-family:var(--fs);font-size:.6rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:.5rem}
+.f-field input,.f-field select,.f-field textarea{width:100%;font-family:var(--fb);font-size:1rem;color:var(--text);background:var(--cream);border:1px solid var(--parchment);border-radius:2px;padding:.78rem 1rem;outline:none;transition:border-color .3s,box-shadow .3s;-webkit-appearance:none}
+.f-field input::placeholder,.f-field textarea::placeholder{color:rgba(122,92,62,.42)}
+.f-field input:focus,.f-field select:focus,.f-field textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(184,135,58,.1);background:var(--white)}
+.f-field textarea{height:115px;resize:vertical}
+.f-field input.err,.f-field select.err,.f-field textarea.err{border-color:var(--rouge)}
+.f-err{font-family:var(--fs);font-size:.6rem;color:var(--rouge);margin-top:.3rem;display:none}.f-field.invalid .f-err{display:block}
+.fs-wrap{display:none;text-align:center;padding:2.5rem 1rem}
+.fs-wrap .check{font-size:2.5rem;margin-bottom:1rem}
+.fs-wrap h4{font-family:var(--fd);font-size:1.5rem;font-style:italic;color:var(--brown);margin-bottom:.5rem}
+.fs-wrap p{font-family:var(--fb);font-size:1rem;color:var(--muted)}
+@media(max-width:640px){.f-row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Top"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 13V3M3 8l5-5 5 5"/></svg></button>
+<div class="mob" id="mob">
+  <a href="index.html" onclick="closeMob()">Home</a>
+  <a href="menu.html" onclick="closeMob()">Menu</a>
+  <a href="story.html" onclick="closeMob()">Our Story</a>
+  <a href="craft.html" onclick="closeMob()">The Craft</a>
+  <a href="events.html" onclick="closeMob()">Events</a>
+  <a href="wholesale.html" onclick="closeMob()">Wholesale</a>
+  <a href="contact.html" class="mob-cta" onclick="closeMob()">Visit & Order</a>
+</div>
+<nav id="nav">
+  <a href="index.html" class="nav-logo">Maison Dorée</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="story.html">Our Story</a></li>
+    <li class="has-drop"><a href="#">More <span class="drop-arrow">▾</span></a>
+      <div class="drop">
+        <a href="craft.html">The Craft</a>
+        <a href="events.html">Events & Catering</a>
+        <a href="wholesale.html">Wholesale & Trade</a>
+      </div>
+    </li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Visit & Order</a>
+  <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<main>
+
+<section class="ph">
+  <div class="ph-bg" style="background-image:url('https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=1600&q=80')"></div>
+  <div class="ph-ov"></div><div class="ph-grain"></div>
+  <div class="ph-content">
+    <div class="ph-eye">14 Rue de la Paix · Old Town · Portland, OR</div>
+    <h1>Come <em>find us.</em></h1>
+    <p class="ph-sub">We're tucked on a cobbled lane in the Old Town Quarter, behind the green shutters. Look for the chalkboard and the smell of something wonderful.</p>
+  </div>
+</section>
+<section class="sp" style="background:var(--white)">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-bottom:5rem">
+      <div class="v-card reveal"><div class="v-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><h3>Address</h3><p>14 Rue de la Paix<br>Old Town Quarter<br>Portland, OR 97201</p><a href="https://maps.google.com" target="_blank">Open in Google Maps →</a></div>
+      <div class="v-card reveal d1"><div class="v-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><h3>Opening Hours</h3><p>Mon–Fri: 7:00 AM – 5:00 PM<br>Saturday: 6:30 AM – 4:00 PM<br>Sunday: 7:00 AM – 2:00 PM</p></div>
+      <div class="v-card reveal d2"><div class="v-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.69h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10a16 16 0 0 0 6.06 6.06l.83-.83a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.5 17.2z"/></svg></div><h3>Get in Touch</h3><a href="tel:+15550421909">+1 (555) 042-1909</a><a href="mailto:hello@maisondoree.com">hello@maisondoree.com</a><p style="margin-top:.6rem;font-size:.9rem">We respond within one business day.</p></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start">
+      <div class="reveal">
+        <div style="background:linear-gradient(135deg,var(--cream-dk) 0%,var(--parchment) 100%);border-radius:2px;aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;padding:2.5rem;text-align:center;margin-bottom:2rem">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <h4 style="font-family:var(--fd);font-size:1.35rem;font-style:italic;color:var(--brown)">Maison Dorée</h4>
+          <p style="font-family:var(--fs);font-size:.75rem;color:var(--muted);letter-spacing:.08em;line-height:1.6">14 Rue de la Paix<br>Old Town Quarter, Portland OR 97201</p>
+          <a href="https://maps.google.com" target="_blank" style="font-family:var(--fs);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);padding:.6rem 1.4rem;border-radius:2px;transition:all .3s;display:inline-block">Get Directions</a>
+        </div>
+      </div>
+      <div class="reveal d1">
+        <div class="lbl">Opening hours</div>
+        <h3 style="font-family:var(--fd);font-size:1.9rem;color:var(--brown);margin-bottom:.8rem">When to <em>Visit</em></h3>
+        <p class="body" style="margin-bottom:1.8rem">We bake everything before we open. Come early for the best selection — viennoiseries are usually gone by 10:30 AM.</p>
+        <div class="h-row"><span class="h-day">Monday – Friday</span><span class="h-time">7:00 AM – 5:00 PM <span class="h-badge">Open</span></span></div>
+        <div class="h-row"><span class="h-day">Saturday</span><span class="h-time">6:30 AM – 4:00 PM</span></div>
+        <div class="h-row"><span class="h-day">Sunday</span><span class="h-time">7:00 AM – 2:00 PM</span></div>
+        <div class="h-row"><span class="h-day">Public Holidays</span><span class="h-closed">Closed</span></div>
+        <p style="font-family:var(--fs);font-size:.73rem;color:var(--muted);margin-top:1.4rem;padding:1rem 1.2rem;background:var(--cream-dk);border-left:2px solid var(--gold-pale);line-height:1.6">Croissants sell out by 10:30 AM most days. Bread lasts until mid-afternoon. Thursday is subscription collection day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sp" style="background:var(--cream-dk)">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:5.5rem;align-items:start">
+      <div class="reveal">
+        <div class="lbl">Get in touch</div>
+        <h2 class="h2" style="margin-bottom:1.2rem">Orders &amp; <em>Enquiries</em></h2>
+        <p class="body" style="margin-bottom:2.5rem">Pre-orders, celebration cakes, subscriptions, catering, or a simple hello — we'd love to hear from you. Every message is read and replied to personally.</p>
+        <div style="display:flex;flex-direction:column;gap:1.2rem">
+          <div style="display:flex;gap:1rem;align-items:flex-start"><div style="width:40px;height:40px;border-radius:50%;background:var(--white);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--gold)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" width="17" height="17"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div style="font-family:var(--fs);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:3px">Address</div><div style="font-family:var(--fb);font-size:.98rem;color:var(--brown)">14 Rue de la Paix, Old Town, Portland OR</div></div></div>
+          <div style="display:flex;gap:1rem;align-items:flex-start"><div style="width:40px;height:40px;border-radius:50%;background:var(--white);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--gold)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" width="17" height="17"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.69h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10a16 16 0 0 0 6.06 6.06l.83-.83a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.5 17.2z"/></svg></div><div><div style="font-family:var(--fs);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:3px">Phone</div><div style="font-family:var(--fb);font-size:.98rem;color:var(--brown)"><a href="tel:+15550421909" style="transition:color .3s">+1 (555) 042-1909</a></div></div></div>
+          <div style="display:flex;gap:1rem;align-items:flex-start"><div style="width:40px;height:40px;border-radius:50%;background:var(--white);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--gold)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" width="17" height="17"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div style="font-family:var(--fs);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:3px">Email</div><div style="font-family:var(--fb);font-size:.98rem;color:var(--brown)"><a href="mailto:hello@maisondoree.com" style="transition:color .3s">hello@maisondoree.com</a></div></div></div>
+        </div>
+      </div>
+      <div class="f-wrap reveal d1" id="fWrap">
+        <div id="fInner">
+          <h3>Place an Order</h3>
+          <p>Pre-orders, cakes, subscriptions, or a simple question — we respond within 24 hours.</p>
+          <div class="f-row">
+            <div class="f-field" id="ff-name"><label>Your Name *</label><input type="text" id="fi-name" placeholder="Élise Martin"><div class="f-err">Please enter your name.</div></div>
+            <div class="f-field" id="ff-email"><label>Email *</label><input type="email" id="fi-email" placeholder="hello@you.com"><div class="f-err">Please enter a valid email.</div></div>
+          </div>
+          <div class="f-field" id="ff-type"><label>Enquiry Type *</label><select id="fi-type"><option value="">Select…</option><option>Pre-order (bread / pastries)</option><option>Celebration Cake</option><option>Bread Subscription</option><option>Events & Catering</option><option>Wholesale / Trade</option><option>General Question</option></select><div class="f-err">Please select an enquiry type.</div></div>
+          <div class="f-field"><label>Date (if applicable)</label><input type="date" id="fi-date"></div>
+          <div class="f-field full" id="ff-msg"><label>Your Message *</label><textarea id="fi-msg" placeholder="Tell us what you're after — the more detail the better…"></textarea><div class="f-err">Please include a message.</div></div>
+          <button class="btn btn-gold" onclick="submitForm()" style="width:100%;justify-content:center;margin-top:.4rem">Send Enquiry <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+        </div>
+        <div class="fs-wrap" id="fSuccess">
+          <div class="check">✉️</div>
+          <h4>Merci beaucoup!</h4>
+          <p>Your enquiry has been received. Élise or a member of the team will be in touch within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="fg">
+    <div><div class="f-logo">Maison Dorée</div><div class="f-tag">Artisan Bakery & Pâtisserie · Est. 2009</div><p class="f-desc">A small bakery in the Old Town Quarter dedicated to the craft of slow, honest baking. Come early. The croissants go fast.</p>
+    <div class="f-socials"><a class="f-soc" href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a class="f-soc" href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></div></div>
+    <div class="fc"><h5>Navigate</h5><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="story.html">Our Story</a></li><li><a href="craft.html">The Craft</a></li><li><a href="events.html">Events</a></li><li><a href="wholesale.html">Wholesale</a></li><li><a href="contact.html">Visit & Order</a></li></ul></div>
+    <div class="fc"><h5>Offerings</h5><ul><li><a href="menu.html">Artisan Breads</a></li><li><a href="menu.html">Viennoiseries</a></li><li><a href="menu.html">Pâtisserie</a></li><li><a href="menu.html">Subscriptions</a></li><li><a href="contact.html">Custom Cakes</a></li></ul></div>
+    <div class="fc"><h5>Visit</h5><ul><li><a href="contact.html">14 Rue de la Paix</a></li><li><a href="contact.html">Portland, OR 97201</a></li><li><a href="tel:+15550421909">+1 (555) 042-1909</a></li><li><a href="mailto:hello@maisondoree.com">hello@maisondoree.com</a></li></ul></div>
+  </div>
+  <div class="fb-bottom"><p>© 2026 Maison Dorée Boulangerie. All rights reserved.</p><div style="display:flex;gap:1.5rem"><a href="#">Privacy</a><a href="#">Terms</a></div></div>
+</footer>
+<script>
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{document.getElementById('btt').classList.toggle('show',window.scrollY>500);});
+const ham=document.getElementById('ham'),mob=document.getElementById('mob');
+ham.addEventListener('click',()=>{ham.classList.toggle('open');mob.classList.toggle('open');document.body.style.overflow=mob.classList.contains('open')?'hidden':'';});
+function closeMob(){ham.classList.remove('open');mob.classList.remove('open');document.body.style.overflow='';}
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in');}),{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+function submitForm(){
+  let ok=true;
+  function chk(fid,iid,fn){const f=document.getElementById(fid),i=document.getElementById(iid),v=fn(i.value);f.classList.toggle('invalid',!v);v?i.classList.remove('err'):i.classList.add('err');if(!v)ok=false;}
+  chk('ff-name','fi-name',v=>v.trim().length>0);
+  chk('ff-email','fi-email',v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v));
+  chk('ff-type','fi-type',v=>v.length>0);
+  chk('ff-msg','fi-msg',v=>v.trim().length>4);
+  if(ok){document.getElementById('fInner').style.display='none';document.getElementById('fSuccess').style.display='block';}
+}
+</script>
+</body></html>
